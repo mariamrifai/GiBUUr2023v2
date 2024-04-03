@@ -24,19 +24,20 @@ cd release2023; make -j
     Editing the Job Card
     Note: This job card is only used for the r2023 release.
 
-        - **File:** `code/inputOutput/input.f90`
-          - **Path to input:** Replace `<actual path of $GIBUUDIR>/buuinput2023` with the actual path.
-          - For testing, change the `numEnsemble` to `4`.
-          - `version = 2023` (this is necessary for r2023 release).
+ - !File: `code/inputOutput/input.f90`
+    - **Path to input:** Replace `<actual path of $GIBUUDIR>/buuinput2023` with the actual path.
+    - For testing, change the `numEnsemble` to `4`.
+    - `version = 2023` (this is necessary for r2023 release).
 
-        - **File:** `code/init/neutrino/neutrinoParms.f90`
-          - apart of the isospin T=0. Do not change other options for this namliset.
+ - !File: `code/init/neutrino/neutrinoParms.f90`
+    - apart of the isospin T=0. Do not change other options for this namliset.
   
-        - The seed (defined in the last line) is commented out in this job card, as GiBUU internally changes the seed for each run.
-        - For other options, a comment has been added in front of the variable.
+ - The seed (defined in the last line) is commented out in this job card, as GiBUU internally changes the seed for each run.
+ - For other options, a comment has been added in front of the variable.
 
-The original job card can be found here: `release2023/testRun/jobCards/005_Neutrino_MINERvA-nu_with_inmed_switches.job`. Modifications in this job have been cross-checked by the developer.
 
-**Important:** For the r2021 release, do not use the same job card. Instead, use `numubarjob_r2021.job`.
+        The original job card can be found here: `release2023/testRun/jobCards/005_Neutrino_MINERvA-nu_with_inmed_switches.job`. Modifications in this job have been cross-checked by the developer.
+
+        **Important:** For the r2021 release, do not use the same job card. Instead, use `numubarjob_r2021.job`.
 
 
